@@ -1,0 +1,23 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-bg {
+    background-color: #0978ad;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.char-selection-box {
+    border: 5px #fffeba solid;
+    margin-top: 20px;
+}
+
+.dividing-line {
+    border: 2px #fffeba solid;
+}
