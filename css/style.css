@@ -5,7 +5,7 @@
 }
 
 .page-bg {
-    background-color: #0978ad;
+    background-color: #001d73;
 }
 
 .container {
@@ -15,9 +15,40 @@
 
 .char-selection-box {
     border: 5px #fffeba solid;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #40515e;
 }
 
 .dividing-line {
     border: 2px #fffeba solid;
+}
+
+.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.arrow-row {
+    width: 1200px;
+    color: #fffeba;
+    font-size: 100px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#char-name {
+    padding: 20px 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#char-description {
+    padding: 20px 20px;
+    font-size: 30px;
+    color: #fff;
 }

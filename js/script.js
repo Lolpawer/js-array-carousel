@@ -126,7 +126,7 @@ let currentIndex = 0;
 let nameOutput = document.getElementById('char-name');
 nameOutput.innerHTML = `${charName[currentIndex]}`;
 
-let descOutput = document.getElementById('char-descritpion');
+let descOutput = document.getElementById('char-description');
 descOutput.innerHTML = `${charDesc[currentIndex]}`;
 
 const buttonPrev = document.getElementById('previous');
