@@ -121,7 +121,24 @@ const charDesc = [
                 <br/>He gave out another sigh – they’re always top secret - but a small smile crept onto his face. He glanced up to his old radio helmet. He’s been bored in retirement anyways.`
                 ];
 
+const charImg = [
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/5/50/Commando.png/revision/latest?cb=20200129200647", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/6/6f/Huntress.png/revision/latest?cb=20200129200650", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/1/1f/Bandit.png/revision/latest?cb=20210326045945", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/6/6f/MUL-T.png/revision/latest?cb=20200129200652", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/d/d8/Engineer.png/revision/latest?cb=20200129200649", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/9/98/Artificer.png/revision/latest?cb=20200129200643", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/0/00/Mercenary.png/revision/latest?cb=20200129200651", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/7/74/REX.png/revision/latest?cb=20200129200652", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/2/25/Loader.png/revision/latest?cb=20200129235338", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/8/8e/Acrid.png/revision/latest?cb=20200129235326", 
+                "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/a/a9/Captain.png/revision/latest?cb=20200811155443"
+                ];
+
 let currentIndex = 0;
+
+let imgOutput = document.getElementById('char-img');
+imgOutput.src = `${charImg[currentIndex]}`;
 
 let nameOutput = document.getElementById('char-name');
 nameOutput.innerHTML = `${charName[currentIndex]}`;
@@ -138,6 +155,7 @@ buttonPrev.addEventListener('click', function () {
         currentIndex = charName.length - 1;
     }
 
+    imgOutput.src = `${charImg[currentIndex]}`;
     nameOutput.innerHTML = `${charName[currentIndex]}`;
     descOutput.innerHTML = `${charDesc[currentIndex]}`;
 });
@@ -151,6 +169,7 @@ buttonNext.addEventListener('click', function () {
         currentIndex = 0;
     }
 
+    imgOutput.src = `${charImg[currentIndex]}`;
     nameOutput.innerHTML = `${charName[currentIndex]}`;
     descOutput.innerHTML = `${charDesc[currentIndex]}`;
 });
