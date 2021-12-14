@@ -1,3 +1,5 @@
+//dichiarazione array nomi, immagini e descrizioni
+
 const charName = [
                 'Commando', 
                 'Huntress', 
@@ -135,7 +137,11 @@ const charImg = [
                 "https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/a/a9/Captain.png/revision/latest?cb=20200811155443"
                 ];
 
+//indice array
+
 let currentIndex = 0;
+
+//output dei nomi, immagini e descrizioni
 
 let imgOutput = document.getElementById('char-img');
 imgOutput.src = `${charImg[currentIndex]}`;
@@ -146,7 +152,12 @@ nameOutput.innerHTML = `${charName[currentIndex]}`;
 let descOutput = document.getElementById('char-description');
 descOutput.innerHTML = `${charDesc[currentIndex]}`;
 
+//scroll premendo i bottoni
+
+//bottone "prima"
+
 const buttonPrev = document.getElementById('previous');
+
 
 buttonPrev.addEventListener('click', function () {
     currentIndex--;
@@ -159,6 +170,8 @@ buttonPrev.addEventListener('click', function () {
     nameOutput.innerHTML = `${charName[currentIndex]}`;
     descOutput.innerHTML = `${charDesc[currentIndex]}`;
 });
+
+//bottone "dopo"
 
 const buttonNext = document.getElementById('next');
 
